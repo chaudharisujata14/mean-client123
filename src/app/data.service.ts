@@ -6,8 +6,8 @@ import { HttpClient } from '@angular/common/http';
 })
 export class DataService {
 
-   urlStudent = 'http://192.168.2.18:9898/student';
-   urlTeacher = 'http://192.168.2.18:9898/teacher';
+   urlStudent = 'http://172.18.5.186:9898/student';
+   urlTeacher = 'http://172.18.5.186:9898/teacher';
   constructor(private http: HttpClient) { }
    selectStudent() {
      return this.http.get(this.urlStudent);
